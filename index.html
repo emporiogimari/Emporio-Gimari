@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ================= SEO ================= -->
+<title>Empório Gimari | Queijos Artesanais</title>
+<meta name="description" content="Conheça a seleção de queijos artesanais, derivados e presentes do Empório Gimari. Encomendas e entregas em Lorena, Guaratinguetá e região.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Empório Gimari | Queijos Artesanais">
+<meta property="og:description" content="Uma seleção especial de queijos artesanais e sabores escolhidos para levar mais sabor à sua mesa.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="images/logo.png">
+
+<!-- ================= FONTES ================= -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ======================================================================
+     HEADER
+     ====================================================================== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#inicio" class="brand">
+      <img src="images/logo.png" alt="Empório Gimari">
+      <span data-marca-nome>Empório Gimari</span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#presentes">Presentes</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#entregas">Entregas</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <a class="btn btn-primary header-cta" data-wa-geral href="#">Fazer meu pedido</a>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Navegação mobile">
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#catalogo">Catálogo</a></li>
+      <li><a href="#presentes">Presentes</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#entregas">Entregas</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <a class="btn btn-primary header-cta" data-wa-geral href="#">Fazer meu pedido</a>
+  </nav>
+</header>
+
+<!-- ======================================================================
+     HERO
+     ====================================================================== -->
+<section class="hero" id="inicio">
+  <div class="container hero-inner">
+    <div class="eyebrow">Empório Gimari</div>
+    <h1>Sabores que transformam momentos.</h1>
+    <p>Uma seleção especial de queijos artesanais e sabores escolhidos para levar mais sabor à sua mesa.</p>
+    <a href="#catalogo" class="btn btn-primary">Conheça nosso catálogo</a>
+  </div>
+</section>
+
+<!-- ======================================================================
+     CATÁLOGO
+     ====================================================================== -->
+<section id="catalogo">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Catálogo</div>
+      <h2>Nossa seleção</h2>
+      <p>Queijos artesanais, derivados e presentes, selecionados com cuidado para chegar até você.</p>
+    </div>
+
+    <div class="filters">
+      <div class="filter-row" id="filterCategorias"></div>
+      <div class="filter-row subfilter-row" id="filterSubcategorias"></div>
+    </div>
+
+    <div class="catalog-grid" id="catalogGrid"></div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     QUEIJO EM DESTAQUE
+     ====================================================================== -->
+<section class="destaque">
+  <div class="container">
+    <div class="destaque-grid" id="destaqueBox"></div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     PRESENTES
+     ====================================================================== -->
+<section class="presentes" id="presentes">
+  <div class="container">
+    <div class="eyebrow">Presentes</div>
+    <h2>Presentes que viram experiências.</h2>
+    <p>Monte uma seleção especial para presentear quem você ama.</p>
+    <a class="btn btn-primary" data-wa-presente href="#">Quero montar um presente</a>
+  </div>
+</section>
+
+<!-- ======================================================================
+     SOBRE
+     ====================================================================== -->
+<section class="sobre" id="sobre">
+  <div class="container">
+    <div class="eyebrow">Sobre o Empório Gimari</div>
+    <h2>Curadoria e cuidado em cada seleção.</h2>
+    <p>
+      O Empório Gimari nasceu do gosto por queijos artesanais e sabores bem escolhidos.
+      Trabalhamos com curadoria cuidadosa de queijarias e produtores, priorizando qualidade,
+      origem e sabor em cada item da nossa seleção.
+    </p>
+    <p>
+      Cada pedido é preparado com atenção aos detalhes, para que você tenha, em casa ou para
+      presentear, uma experiência gastronômica que vai além do produto — um momento à mesa
+      para aproveitar com quem você gosta.
+    </p>
+  </div>
+</section>
+
+<!-- ======================================================================
+     ENTREGAS
+     ====================================================================== -->
+<section class="entregas" id="entregas">
+  <div class="container">
+    <div class="eyebrow">Entregas</div>
+    <h2 style="color:var(--creme)">Receba seus sabores favoritos.</h2>
+    <p>O Empório Gimari trabalha com encomendas e entregas, sem loja física, para levar nossa seleção diretamente até você.</p>
+    <div class="cidades-list" id="cidadesList"></div>
+    <a class="btn btn-outline" style="border-color:var(--dourado-claro); color:var(--creme);" data-wa-geral href="#">Consultar minha região</a>
+  </div>
+</section>
+
+<!-- ======================================================================
+     CONTATO
+     ====================================================================== -->
+<section class="contato" id="contato">
+  <div class="container">
+    <div class="eyebrow">Contato</div>
+    <h2>Vamos preparar seu pedido?</h2>
+    <p>Fale com a gente pelo WhatsApp e conte o que você está procurando — a gente te ajuda a escolher.</p>
+    <a class="btn btn-primary" data-wa-geral href="#">Fale conosco pelo WhatsApp</a>
+    <div class="contato-info">
+      <span>Instagram: <a data-instagram href="#" target="_blank" rel="noopener"></a></span>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     FOOTER
+     ====================================================================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="brand-name" data-marca-nome>Empório Gimari</div>
+    <div class="slogan" data-marca-slogan>Sabores que transformam momentos.</div>
+    <div class="footer-links">
+      <a data-instagram href="#" target="_blank" rel="noopener"></a>
+      <a data-wa-geral href="#">WhatsApp</a>
+    </div>
+    <div class="footer-cities" id="footerCidades"></div>
+    <div class="copyright">© <span id="anoAtual"></span> Empório Gimari</div>
+  </div>
+</footer>
+
+<!-- ======================================================================
+     WHATSAPP FLUTUANTE
+     ====================================================================== -->
+<a class="wa-float" data-wa-geral href="#" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 32 32" fill="none">
+    <path d="M16 2.7C8.6 2.7 2.7 8.6 2.7 16c0 2.6.7 5.1 2 7.3L2.7 29.3l6.2-1.9c2.1 1.2 4.5 1.8 6.9 1.8 7.4 0 13.4-6 13.4-13.3S23.4 2.7 16 2.7z" fill="#F7F1E3"/>
+    <path d="M16 4.7C9.7 4.7 4.7 9.7 4.7 16c0 2.3.6 4.5 1.8 6.4L5.4 27l4.8-1.2c1.8 1 3.8 1.6 6 1.6 6.3 0 11.3-5 11.3-11.3S22.3 4.7 16 4.7z" fill="#3F4A34"/>
+    <path d="M12 10.4c-.3-.7-.6-.7-.9-.7h-.7c-.3 0-.7.1-1 .5-.3.4-1.3 1.3-1.3 3.1s1.3 3.6 1.5 3.9c.2.3 2.6 4 6.3 5.5 3.1 1.2 3.7 1 4.4.9.7-.1 2.1-.9 2.4-1.7.3-.8.3-1.5.2-1.7-.1-.2-.3-.3-.7-.5-.3-.2-2.1-1-2.4-1.2-.3-.1-.6-.2-.8.2-.2.3-.9 1.2-1.1 1.4-.2.2-.4.3-.8.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.2-.7.2-.2.3-.3.5-.6.2-.2.2-.4.3-.6.1-.2 0-.5 0-.7-.1-.2-.8-2-1.1-2.7z" fill="#F7F1E3"/>
+  </svg>
+</a>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
